@@ -1,4 +1,5 @@
 class Product < ActiveRecord::Base
+  default_scope -> { order('popularity DESC') }
   mount_uploader :image_url, PictureUploader
   has_many :line_items
 

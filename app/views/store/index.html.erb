@@ -18,6 +18,6 @@
       </span>
       <%= button_to 'Add to Cart', line_items_path(product_id: product) %>
     </div>
-    <h4>This book has been added to some shopping cart <%= product.popularity %> time(s).<h4>
+    <h4>This book has been added to some shopping cart <%= Integer(product.popularity) %> time(s).<h4>
   </div>
 <% end %>
