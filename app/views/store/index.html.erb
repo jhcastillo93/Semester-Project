@@ -1,7 +1,11 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<%= @shown_message %>
+
+<% if @count > 5 %>
+<p id="notice"><%= @shown_message %></p>
+<% end %>
+
 <h1>Your Pragmatic Catalog</h1>
 
 <% @products.each do |product| %>
