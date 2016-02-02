@@ -16,10 +16,11 @@
     <div id="side">
       <h3><c> <%=@time%> </c></h3>
       <ul>
-        <li><a href="/store/index">Home</a></li>
-        <li><a href="/products">Products</a></li>
-        <li><a href="/carts/">My Shopping Cart</a></li>
-        <li><a href="">Help</a></li>
+        <li><%= link_to "Home", store_path %></li>
+        <li><%= link_to "Products", products_path %></li>
+        <% if not current_page?(products_path) %>
+          <li><%= link_to "My Shopping Cart", carts_path %></li> |
+        <% end %>
       </ul>
     </div>
     <div id="main">
