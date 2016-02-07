@@ -18,4 +18,4 @@
   </tr>
 </table>
 <%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= button_to 'Back to Catalog', store_path %>
+<%= button_to 'Back to Catalog', store_path, :class => "button", :method => :get %>
