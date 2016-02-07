@@ -5,10 +5,11 @@
 <h2>Your Pragmatic Cart</h2>
 <ul>    
   <% @cart.line_items.each do |item| %>
-    <li><%= item.product.title %></li>
+    <li><%= item.quantity %> &times; <%= item.product.title %></li>
   <% end %>
 </ul>
-<%= link_to "Manage Shopping Carts", carts_path %>
+<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= button_to "Manage Shopping Carts", carts_path %>
 <br>
-<%= link_to 'Back to Catalog', store_path %>
+<%= button_to 'Back to Catalog', store_path %>
 
