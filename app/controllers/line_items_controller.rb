@@ -35,7 +35,7 @@ class LineItemsController < ApplicationController
         product.popularity = product.popularity + 1
         product.update_attributes(:popularity => product.popularity)
         format.html { redirect_to store_url }
-        format.js
+        format.js   { @current_item = @line_item }
         format.json { render action: 'show',
           status: :created, location: @line_item }
       else
