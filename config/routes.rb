@@ -9,4 +9,8 @@ Rails.application.routes.draw do
   
   root 'store#index', as: 'store'
 
+  resources :line_items do
+    put 'decrease', on: :member
+  end
+
 end
