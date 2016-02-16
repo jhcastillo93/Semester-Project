@@ -4,3 +4,4 @@ if ($('#cart tr').length==1) {
     // Hide the cart
     $('#cart').hide('blind', 1000);    
 }
+$(".popular_<%=@line_item.product.id%>").html("<%= escape_javascript render partial: "/store/prod_pop", locals: {pro: @line_item.product.id} %>");

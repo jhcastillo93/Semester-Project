@@ -1,1 +1,6 @@
+<% @prods.each do |items_in|
+	product = Product.find(items_in.product_id) %>
+	$(".popular_<%=product.id%>").html("<%= escape_javascript render partial: "/store/prod_pop", locals: {pro: product.id} %>");
+	<%end%>
+
 $('#cart').hide('blind', 1000);
