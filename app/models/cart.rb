@@ -13,28 +13,28 @@ class Cart < ActiveRecord::Base
 
 	def total_price
     	line_items.to_a.sum { |item| item.total_price }
-  	end
+  end
 
-  	def decrease(line_item_id)
-    	current_item = line_items.find(line_item_id)
-    	product = Product.find(current_item.product_id)
-    	product.popularity = product.popularity - 1
-        product.update_attributes(:popularity => product.popularity)
-    	if current_item.quantity > 1
-      		current_item.quantity -= 1
-    	else
-      		current_item.destroy
-    	end
-    	current_item
+	def decrease(line_item_id)
+  	current_item = line_items.find(line_item_id)
+  	product = Product.find(current_item.product_id)
+  	product.popularity = product.popularity - 1
+      product.update_attributes(:popularity => product.popularity)
+  	if current_item.quantity > 1
+    		current_item.quantity -= 1
+  	else
+    		current_item.destroy
   	end
+  	current_item
+	end
 
-  	def update_popularity
-  		line_items.each { |cart_items| 
-  			current_item = line_items.find(cart_items.id)
-  			decreaseBy = current_item.quantity
-  			product = Product.find(current_item.product_id)
-  			product.popularity = product.popularity - decreaseBy
-  			product.update_attributes(:popularity => product.popularity)
+	def update_popularity
+		line_items.each { |cart_items| 
+			current_item = line_items.find(cart_items.id)
+			decreaseBy = current_item.quantity
+			product = Product.find(current_item.product_id)
+			product.popularity = product.popularity - decreaseBy
+			product.update_attributes(:popularity => product.popularity)
 		}
 	end
 
