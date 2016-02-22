@@ -25,4 +25,28 @@
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
 
+<p>
+  <h2>Listing orders:</h2>
+</p>
 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Cover Page</th>
+    <th>Unit Price</th>
+    <th>No. of Copies</th>
+    <th>Total Price</th>
+  </tr>
+<% @products.each do |product| %>
+  <tr>
+    <td><%= product.title %></td>
+    <td><%= image_tag(product.image_url) %></td>
+    <td><%= number_to_currency(product.price) %></td>
+    
+
+  </tr>
+<% end %>
+
+</table>
+
+<br />
