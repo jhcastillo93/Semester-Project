@@ -40,6 +40,11 @@ gem 'will_paginate'
 
 gem 'figaro'
 
+gem 'bootstrap-sass'
+
+gem 'autoprefixer-rails'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

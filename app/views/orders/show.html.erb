@@ -25,28 +25,28 @@
 <%= link_to 'Edit', edit_order_path(@order) %> |
 <%= link_to 'Back', orders_path %>
 
-<p>
-  <h2>Listing orders:</h2>
-</p>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Cover Page</th>
-    <th>Unit Price</th>
-    <th>No. of Copies</th>
-    <th>Total Price</th>
-  </tr>
-<% @products.each do |product| %>
-  <tr>
-    <td><%= product.title %></td>
-    <td><%= image_tag(product.image_url) %></td>
-    <td><%= number_to_currency(product.price) %></td>
-    
-
-  </tr>
-<% end %>
-
+<h2>Listing orders:</h2>
+<table class="bordered">
+    <thead>
+    <tr>
+        <th>Title</th>
+	    <th>Cover Page</th>
+	    <th>Unit Price</th>
+	    <th>No. of Copies</th>
+	    <th>Total Price</th>
+    </tr>
+    </thead>
+    <% order = @order %>
+    <% order.line_items.each do |prod| %>
+    <tr>
+	    <td><%= prod.product.title %></td>
+	    <td><%= image_tag(prod.product.image_url, :width => 80) %></td>
+	    <td><%= number_to_currency(prod.product.price) %></td>
+        <td><%= prod.quantity %></td>
+        <td><%= number_to_currency(prod.total_price) %></td>
+    </tr>
+	<% end %>        
 </table>
+<br>
+<h3> Total Price: <%= number_to_currency(@order.total_price) %> </h3>
 
-<br />
