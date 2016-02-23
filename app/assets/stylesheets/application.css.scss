@@ -12,6 +12,7 @@
  * 
  *= require_self
  *= require_tree .
+ *= stub orders
  */
 
 #banner {
@@ -57,7 +58,7 @@ footer {
   #side {
     float: left;
     padding: 1em 2em;
-    width: 13em;
+    width: 14em;
     background: #141;
     c {
       color: #ffffff;
@@ -94,11 +95,9 @@ footer {
     }
   }
 }
-
 .depot_form {
   fieldset {
     background: #efe;
-
     legend {
       color: #dfd;
       background: #141;
@@ -106,7 +105,6 @@ footer {
       padding: 0.2em 1em;
     }
   }
-
   form {
     label {
       width: 5em;
@@ -116,15 +114,12 @@ footer {
       margin-right: 0.1em;
       display: block;
     }
-
     select, textarea, input {
       margin-left: 0.5em;
     }
-
     .submit {
       margin-left: 4em;
     }
-
     br {
       display: none
     }
