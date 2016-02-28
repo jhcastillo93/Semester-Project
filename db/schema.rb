@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227040156) do
+ActiveRecord::Schema.define(version: 20160228221857) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -38,6 +38,8 @@ ActiveRecord::Schema.define(version: 20160227040156) do
     t.string   "pay_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "products", force: :cascade do |t|
@@ -58,6 +60,11 @@ ActiveRecord::Schema.define(version: 20160227040156) do
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "address"
+    t.string   "title"
+    t.string   "description"
   end
 
 end
