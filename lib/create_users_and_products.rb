@@ -9,13 +9,16 @@ User.transaction do
 	    :password_confirmation => 'mary')
 end
 
+user_id1 = (User.find_by(name: 'dave')).id
+user_id2 = (User.find_by(name: 'mary')).id
+
 Product.create!(title: 'C Programming',
   description: 
     %{<p>
         C Programming Language in a snap. Learn all the foundations about the C Language.
       </p>},
   image_url:   open('app/assets/images/cprog.jpg'),    
-  price: 69.95, user_id: 3)
+  price: 69.95, user_id: user_id1)
 
 Product.create!(title: 'UNIX Programming',
   description: 
@@ -27,7 +30,7 @@ Product.create!(title: 'UNIX Programming',
         everything he or she needs to know to customize the way a Unix system responds.
       </p>},
   image_url:   open('app/assets/images/unix.jpg'),    
-  price: 29.95, user_id: 3)
+  price: 29.95, user_id: user_id1)
 
   Product.create!(title: 'Intro to Java Programming',
   description: 
@@ -38,4 +41,4 @@ Product.create!(title: 'UNIX Programming',
         object-oriented, GUI programming, advanced GUI and Web programming using Java. 
       </p>},
   image_url:   open('app/assets/images/java.jpg'),    
-  price: 99.95, user_id: 4)
+  price: 99.95, user_id: user_id2)
