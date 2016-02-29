@@ -1,8 +1,11 @@
 User.transaction do
 	
-	User.create( :name => 'admin', 
-	    :password =>'admin', 
-	    :password_confirmation => 'admin')
+	User.create( name: 'admin', 
+	    password: 'admin', 
+	    password_confirmation: 'admin',
+      address: "Valdosta, GA",
+      title: "Winnersville, USA", 
+      description: "Population: 150000")
 end
 
 user_id = (User.find_by(name: 'admin')).id

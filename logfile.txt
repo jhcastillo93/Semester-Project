@@ -1,3 +1,285 @@
+commit bb7af25b760d6f238d11d700a1dbe0b4080e8717
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 28 17:22:11 2016 -0500
+
+    Added goolge Maps
+
+commit 7c5cd9cbc2abbbd316e28e8b3c34fb221e8eefca
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 28 16:35:26 2016 -0500
+
+    Completed the products to users
+
+commit 0be4e1940fb44662d74f566fb414ccaf5a03ea60
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sat Feb 27 11:18:48 2016 -0500
+
+    Added one to many relationship for user to products
+
+commit 72bb35f79912e9ccdc039a56f5220befcefece7d
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Feb 26 17:25:36 2016 -0500
+
+    Completed ALL TASKS I 1-4
+
+commit 509666c200c7864dbb2eefff850ffbc0e0d1c448
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Feb 26 16:36:17 2016 -0500
+
+    Completed TASKS I1-3...currently working on TASK I4
+
+commit a37eac0d748555ac5b8863dd4626564ec37be84f
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Feb 26 15:17:45 2016 -0500
+
+    Added authentication logic across all controllers
+
+commit 787c9dff7806581285a550a3172a8ef1e4e83148
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Thu Feb 25 19:29:17 2016 -0500
+
+    Started working on PROJECT 6
+
+commit dca93c9dc47d9479e279ab72cde22ee658bb078a
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 23 14:38:18 2016 -0500
+
+    Finished minor fixes and functions.....PROJECT 5 COMPLETED..Ready for Heroku
+
+commit b4e7bb04c5d126c29535a870e9572de81929e5c2
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Mon Feb 22 20:57:06 2016 -0500
+
+    Fixed order tables to display correctly
+
+commit 44889f325a279d3f960bc90050f79383ad96fd14
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 21 23:38:09 2016 -0500
+
+    Working on Order Products Listing for each Order..half complete
+
+commit 95a2ce2fd26235f560529c6944d91d0311385816
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sat Feb 20 17:31:21 2016 -0500
+
+    Completed TASK H..email client is working. Now working on additional features
+
+commit 717b4faba456c65dd929aecb972df208ab42afeb
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Thu Feb 18 21:13:55 2016 -0500
+
+    Fixed issue with TASK G3...moving on to TASK H
+
+commit 9a8b351a402724401ca6265291953ba54b3c6a96
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Thu Feb 18 19:49:45 2016 -0500
+
+    Completed TASK G3
+
+commit fd775375391e60254c6c95429929a8a856795e8a
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Thu Feb 18 19:34:49 2016 -0500
+
+    Completed TASK G2...now working on TASK G3
+
+commit 43fe4f55ee18d346060da49f40abf0303608d615
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Thu Feb 18 19:21:14 2016 -0500
+
+    Started working on TASK G2
+
+commit 4f6e3f8a83cd64eaa9f5897d5755c94f8dbcdcea
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 17 19:54:05 2016 -0500
+
+    Completed TASK G1: Checkout page with functionality
+
+commit ceef27ba0b55eb61f7f5a4c1a6903a113ad2e036
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 17 19:40:27 2016 -0500
+
+    Added Checkout page
+
+commit f3e54f072863404a445d6ab22de9d24cd6aa9b03
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 17 19:24:42 2016 -0500
+
+    Began working on Project 5...TASK G1
+
+commit 42e1befcd0722787027bfa0871dd9547c643faba
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 16 15:12:28 2016 -0500
+
+    Added AJAX to Popularity and fixed all issues with popularity updates
+
+commit 2abcaa85e8117ccce6b159785ac09ca393cdc581
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 14 18:28:49 2016 -0500
+
+    Fixed 2 click fire when image is selected
+
+commit e7c9ef94538046c16115c0e9c11e02d318e1f20e
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sat Feb 13 15:49:01 2016 -0500
+
+    Added decrment button in cart....working on a few more fixed and modifications
+
+commit 6cd91760d77ed9a9cfe01d5f0b673f667bafe701
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sat Feb 13 15:26:44 2016 -0500
+
+    Completed Playtime empty cart blind effect.
+
+commit b4ec5bb3700c104585ad0aba03f769b6761006e3
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 9 20:00:04 2016 -0500
+
+    Completed TASK F..now working on playtime
+
+commit ba1d06dde7f2a164175d8e1cac05788e219ff84e
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 9 19:51:52 2016 -0500
+
+    Completed adding AJAX to the shopping cart
+
+commit 8124573f7b17c8b7301258cbcd9e36fa3e040c94
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 9 19:29:39 2016 -0500
+
+    Added flashing green in cart
+
+commit d8860799cc8ee6c5735a5a7c5d3564807f6f17c5
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 9 18:43:55 2016 -0500
+
+    Added a bit of AJAX to add cart method
+
+commit dcb1c3accc4154ef643ea0345830b7d94465c114
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 9 18:35:40 2016 -0500
+
+    Changed add cart flow to redirect to store page instead of line items
+
+commit 2a33344427ad9d1a544d5ec18d6250f469bebea5
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Mon Feb 8 20:14:37 2016 -0500
+
+    Started working on TASK F: added AJAX to Shopping Cart...now displays in sidebar..working on page flows now
+
+commit 6e464d7b8b53009085c51ba4e556957706b31d79
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 18:55:04 2016 -0500
+
+    Done with all of TASK E
+
+commit 9ee43b4e91551e76c52a3d22bd064c64fd3cfce5
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 18:41:22 2016 -0500
+
+    Fixed issue with Back to Catalog button in Shopping Cart
+
+commit c1b3e110341d5c5860ad11426343e91cba0164fd
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 18:33:38 2016 -0500
+
+    Added total price in carts and added css style for cart view
+
+commit 4638258424e50009347c1dbb3e2bf7bf9c9c08e4
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 18:27:14 2016 -0500
+
+    Fixed empty cart method issue to redirect to home page with emtpy cart notice once empty cart is selected
+
+commit 0b0b6b1e8d85012bc0746e1089d0ba68d6cc3515
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 18:03:07 2016 -0500
+
+    Added empty cart button and new notice messages
+
+commit 35e471c18879a9304287b10f3c37e57769258664
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Feb 7 17:49:29 2016 -0500
+
+    Improved security by removing direct access to cart id
+
+commit 54b31833f420d3838a2559d50cbccdf8f8fe3498
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Feb 5 09:52:19 2016 -0500
+
+    Began working on Project 4 Tasks....Starting Task E
+
+commit 27c12e77aff1811865d3ddf76cbc984125006765
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 3 17:01:49 2016 -0500
+
+    Added extra feature: Footer.....Now Ready for Heroku--Finished
+
+commit 97644eca0d54f9a544c775fdca14bd4691ded4b1
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 3 16:55:46 2016 -0500
+
+    Completed all tasks for Project 3, all features implemented
+
+commit 934f3a6156bd6cf6f58cfebb3835607762c1ceb6
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Wed Feb 3 15:46:04 2016 -0500
+
+    Successfully fixed My Shopping Cart link to route to the current cart
+
+commit ee3acc64365a7fa0b49e6fb3d551d2f6526b8f39
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 2 18:17:14 2016 -0500
+
+    Finished popularity feature to rank products based on popularity
+
+commit 8733c7e01760435b64195c7d5d4d82241db00cad
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 2 17:56:12 2016 -0500
+
+    Implemented popularity table and initial feature on home page to display popularity of each book
+
+commit 9aeb084712b80ee01f26d8f47102fd5c454dae64
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Tue Feb 2 17:26:59 2016 -0500
+
+    Began working on popularity feature
+
+commit 5e155074c7f69379ce8fe2062d4a1b34271b707c
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Mon Feb 1 20:58:56 2016 -0500
+
+    Modified shopping cart link to not display on products page
+
+commit 3d12a2f046c843ab748ed7dd1df2df60890e8e7e
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Mon Feb 1 20:37:17 2016 -0500
+
+    Began working on the addtional requirements of project 3
+
+commit 0a7ae7dfb2f56a9e26b4054a529ca95bde455519
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Jan 31 21:03:53 2016 -0500
+
+    Added session counter and added logic to display message only after 5 vists
+
+commit 596432e578323f7b5147a7279c609687ae159a42
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Sun Jan 31 20:22:54 2016 -0500
+
+    Finalized Task D and beginning to work on Playtime task
+
+commit 4bb4ee8068750957c3677fa1c841e1376b7e6c23
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Jan 29 16:19:36 2016 -0500
+
+    Completed initial parts of TASK D
+
+commit a963c95538ad2c74ef8a264863827afc2489f0fd
+Author: Jason Castillo <jhcastillo@valdosta.edu>
+Date:   Fri Jan 29 15:33:28 2016 -0500
+
+    Created and started working on project 3
+
 commit 59f572f2feaff380a2cf5277be9741419fa100a8
 Author: Jason Castillo <jhcastillo@valdosta.edu>
 Date:   Wed Jan 27 16:11:31 2016 -0500

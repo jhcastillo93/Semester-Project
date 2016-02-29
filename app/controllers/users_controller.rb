@@ -5,11 +5,33 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.order(:name)
+    @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+      marker.infowindow user.description
+    end
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
+    
+    @hash = Gmaps4rails.build_markers(@user) do |user, marker|
+      marker.lat user.latitude
+      marker.lng user.longitude
+      marker.infowindow user.description
+      
+      if ((@user.description)[/\d+/].to_i > 2000000) 
+         img = "/images/bigcity.png"
+      else 
+         img = "/images/smallcity.png" 
+      end
+      marker.picture({
+       "url" => img,
+       "width" =>  32,
+       "height" => 32})
+       
+    end    
   end
 
   # GET /users/new

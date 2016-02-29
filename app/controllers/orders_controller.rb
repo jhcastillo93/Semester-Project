@@ -8,12 +8,20 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
     @orders = Order.order('created_at desc').paginate(page: params[:page],per_page: 10)
+    @hash = Gmaps4rails.build_markers(@orders) do |order, marker|
+      marker.lat order.latitude
+      marker.lng order.longitude
+    end
   end
 
   # GET /orders/1
   # GET /orders/1.json
   def show
     @products = @order.products
+    @hash = Gmaps4rails.build_markers(@order) do |order, marker|
+      marker.lat order.latitude
+      marker.lng order.longitude     
+    end  
   end
 
   # GET /orders/new
