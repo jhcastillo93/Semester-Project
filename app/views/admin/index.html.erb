@@ -1,6 +1,7 @@
 <h1>Welcome <em><%= (User.find_by(id: session[:user_id])).name %></em></h1>
 
-It's <%= Time.now %>
-We have <%= pluralize(@total_orders, "order") %>.
+It's <%= Time.now.strftime("%I:%M %p %Z") %>
+<br><br>
+We have <strong><%= link_to pluralize(@total_orders, "order"),orders_path, 'data-no-turbolink' => true %></strong>.
 
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

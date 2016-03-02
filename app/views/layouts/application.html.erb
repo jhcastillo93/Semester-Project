@@ -14,7 +14,7 @@
   </div>
   <div id="columns">
     <div id="side">
-    <h3><c> <%=@time%> </c></h3>
+    <h3><c> <%=Time.now.strftime("%I:%M %p %Z")%> </c></h3>
       
       <% if @cart %>
         <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
@@ -23,19 +23,22 @@
       <% end %>
       
       <ul>
-        <li><%= link_to "Home", store_path %></li>
-        <li><%= link_to "Products", products_path %></li>
+        <li><%= link_to "Home", store_path, {:style=>'color:#FFFFFF;', :class => "css_class"} %></li>
+        <li><%= link_to "Products", products_path, {:style=>'color:#FFFFFF;', :class => "css_class"} %></li>
         <% if not current_page?(products_path) %>
-          <li><%= link_to "My Shopping Cart", current_path(current_cart) %></li> |
+          <li><%= link_to "My Shopping Cart", current_path(current_cart), {:style=>'color:#FFFFFF;', :class => "css_class"} %></li>
         <% end %>
+        <br>
       </ul>
-
+      <% if not User.find_by(id: session[:user_id]) %>
+        <%= button_to 'Login', login_path %>
+      <% end %>
       <% if session[:user_id] %>
-      <h3><c><em><%= (User.find_by(id: session[:user_id])).name %></em></c></h3>
+      <h2><c><em><%= link_to (User.find_by(id: session[:user_id])).name, admin_url, {:style=>'color:#FFFFFF;', :class => "css_class"} %></em></c></h2>
         <ul>
-          <li><%= link_to 'Orders',   orders_path   %></li>
-          <li><%= link_to 'Products', products_path %></li>
-          <li><%= link_to 'Users',    users_path    %></li>
+          <li><%= link_to 'View Orders',orders_path, 'data-no-turbolink' => true %></li>
+          <li><%= link_to 'View Products', products_path %></li>
+          <li><%= link_to 'View Users',users_path,  'data-no-turbolink' => true   %></li>
         </ul>
         <%= button_to 'Logout', logout_path, method: :delete   %>
       <% end %>

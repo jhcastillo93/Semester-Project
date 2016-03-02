@@ -7,7 +7,7 @@
 
 <h1>Listing Orders</h1>
 
-<table>
+<table class="bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -18,19 +18,17 @@
     </tr>
   </thead>
 
-  <tbody>
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.name %></td>
         <td><%= order.address %></td>
         <td><%= order.email %></td>
         <td><%= order.pay_type %></td>
-        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'Show', order, 'data-no-turbolink' => true %></td>
         <td><%= link_to 'Edit', edit_order_path(order) %></td>
         <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
 </table>
 
 <br>
